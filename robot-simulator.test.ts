@@ -1,11 +1,11 @@
 import {Robot} from './src/modules/entities/Robot'
 import {Directions} from "./types/types";
-import {RobotController} from "./src/modules/controllers/RobotController";
+import {MoveController} from "./src/modules/controllers/MoveController";
 
 describe('Robot', () => {
-    const initRobot = (coordinateX: number, coordinateY: number, bearing: Directions): { robotController: RobotController, robot: Robot } => {
+    const initRobot = (coordinateX: number, coordinateY: number, bearing: Directions): { robotController: MoveController, robot: Robot } => {
       const robot = new Robot(coordinateX, coordinateY, bearing)
-      const robotController = new RobotController(robot);
+      const robotController = new MoveController(robot);
 
       return {robotController, robot};
     }

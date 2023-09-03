@@ -4,7 +4,7 @@ import {isValidCommandString} from "../../../utils/validators";
 import {AdvanceCommand, TurnLeftCommand, TurnRightCommand} from "../commands/MovementCommands";
 import {Commands} from "../../../types/types";
 
-export class RobotController {
+export class MoveController {
   private readonly subject: Movable;
 
   constructor(subject: Movable) {
